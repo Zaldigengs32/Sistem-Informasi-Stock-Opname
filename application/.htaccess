@@ -1,0 +1,11 @@
+<IfModule authz_core_module>
+    Require all denied
+</IfModule>
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
+<ifModule mod_headers.c>
+    <filesMatch "\\.(png|PNG|jpg|jpeg)$">
+        Header set Cache-Control "max-age=0, public"
+    </filesMatch>
+</ifModule>
