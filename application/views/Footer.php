@@ -1,91 +1,90 @@
 <!-- /.content-wrapper -->
-<footer class="main-footer">
-  ‎
 
-  <div class="float-right d-none d-sm-inline-block">
-    Designed By <a target="_blank" href="https://www.polytechnic.astra.ac.id/"> Politeknik Astra</a> MI 19-21
+<style>
+  /* Footer text - hitam untuk light mode */
+  .footer-text,
+  .d-footer .footer-text,
+  footer .footer-text {
+    color: #000000 !important;
+  }
+  
+  /* Footer text - putih untuk dark mode */
+  [data-theme="dark"] .footer-text,
+  [data-theme="dark"] .d-footer .footer-text,
+  [data-theme="dark"] footer .footer-text,
+  html[data-theme="dark"] .footer-text,
+  .dark .footer-text,
+  body.dark-mode .footer-text {
+    color: #ffffff !important;
+  }
+
+  /* SweetAlert2 font size */
+  .swal2-title {
+    font-size: 1.5rem !important;
+  }
+  .swal2-html-container {
+    font-size: 1rem !important;
+  }
+  
+  /* SweetAlert2 Cancel button - teks hitam default, putih saat hover */
+  .swal2-cancel {
+    color: #000000 !important;
+  }
+  .swal2-cancel:hover {
+    background-color: #374151 !important;
+    color: #ffffff !important;
+  }
+</style>
+
+<footer class="d-footer">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-auto">
+      <p class="mb-0 footer-text">© 2025 UPT INFORMATIKA - Politeknik Astra. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
 
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-  <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+ <!-- jQuery library js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/jquery-3.7.1.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminlte/js/bootstrap.bundle.min.js"></script>
+  <!-- Apex Chart js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/apexcharts.min.js"></script>
+  <!-- Data Table js -->
 
-<!-- jQuery -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <!-- Iconify Font js -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+  <!-- jQuery UI js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/jquery-ui.min.js"></script>
+  <!-- Vector Map js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/jquery-jvectormap-2.0.5.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/adminlte/js/jquery-jvectormap-world-mill-en.js"></script>
+  <!-- Popup js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/magnifc-popup.min.js"></script>
+  <!-- Slick Slider js -->
+  <script src="<?php echo base_url() ?>assets/adminlte/js/slick.min.js"></script>
+  
+  <!-- main js -->
+  <!-- <script src="<?php echo base_url() ?>assets/adminlte/js/app.js"></script> -->
+<!-- jQuery (harus sebelum DataTables) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+<!-- DataTables JS -->
+<script src="<?php echo base_url() ?>assets/adminlte/js/dataTables.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/moment/moment.min.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/dist/js/adminlte.js"></script>
-
-<script src="<?php echo base_url() ?>assets/adminlte3.2/dist/js/pages/dashboard.js"></script>
-
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/datatables-bs4/js/jquery.dataTables.min.js"></script>
-
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<!-- Ekko Lightbox -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
-
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/fontawesome/js/fontawesome.js"></script>
-<!-- ChartJS -->
-<script src="<?php echo base_url() ?>assets/adminlte3.2/plugins/chart.js/Chart.min.js"></script>
-<!-- <script>
-  $(document).ready(function() {
-    var table = $('#dataTable').DataTable();
-  });
-</script> -->
-<script type="text/javascript">
-  let slideIndex = 1;
-  showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-      slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+  function showImageModal(src) {
+    document.getElementById("zoomedImage").src = src;
+    $('#imageModal').modal('show');
   }
 </script>
+<script src="<?php echo base_url() ?>assets/adminlte/js/app.js"></script>
+
 
 </body>
 

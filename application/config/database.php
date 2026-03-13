@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => '127.0.0.1',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'peminjaman_ruangan1',
+	'database' => 'db_siso',
 	// 'hostname' => '192.168.1.9',
 	// 'username' => 'andon',
 	// 'password' => '4nd0n',
@@ -96,5 +96,6 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-	'save_queries' => TRUE
+	'save_queries' => TRUE,
+	'port' => 3306
 );

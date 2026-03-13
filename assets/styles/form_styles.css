@@ -1,0 +1,41 @@
+.left {
+	text-align: left;
+}
+.swal-footer {
+	text-align: center;
+	padding-top: 13px;
+	margin-top: 13px;
+	padding: 13px 16px;
+	border-radius: inherit;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+.button-pesan {
+	appearance: button;
+	background-color: #17a2b8;
+	background-image: none;
+	border: 1px solid #0059ab;
+	color: #000;
+	cursor: pointer;
+	display: inline-block;
+	font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	margin-left: -15%;
+	overflow: visible;
+	padding: 12px 40px;
+	text-align: center;
+	text-transform: none;
+	touch-action: manipulation;
+	user-select: none;
+	-webkit-user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+/* .button-pesan:hover {
+	background-color: #1fe0ff;
+} */
+.kembali:hover .button-pesan:hover {
+	background-color: #1fe0ff;
+}

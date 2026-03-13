@@ -1,0 +1,290 @@
+/* ===================================================== */
+/* DARK MODE VARIABLES */
+/* ===================================================== */
+html[data-theme="dark"] {
+  --dt-html-background: #0d1b2a;
+
+  --table-header-bg: #001f3f;
+  --table-body-bg: #1b3a5f;
+  --table-hover-bg: #20406b;
+
+  --table-text-color: #e0f2fe;
+  --table-header-text: #ffffff;
+  --table-border-color: #2c5282;
+}
+
+/* ===================================================== */
+/* BASE TABLE */
+/* ===================================================== */
+[data-theme="dark"] table,
+[data-theme="dark"] .table {
+  background-color: var(--table-body-bg) !important;
+  color: var(--table-text-color) !important;
+  border-color: var(--table-border-color) !important;
+}
+
+/* ===================================================== */
+/* TABLE HEADER */
+/* ===================================================== */
+[data-theme="dark"] table thead th,
+[data-theme="dark"] .table thead th,
+[data-theme="dark"] table tfoot th,
+[data-theme="dark"] .table tfoot th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+  border-color: var(--table-border-color) !important;
+}
+
+/* ===================================================== */
+/* TABLE BODY (NO STRIPING) */
+/* ===================================================== */
+[data-theme="dark"] table tbody tr,
+[data-theme="dark"] .table tbody tr,
+[data-theme="dark"] table tbody td,
+[data-theme="dark"] .table tbody td,
+[data-theme="dark"] table tbody th,
+[data-theme="dark"] .table tbody th {
+  background-color: var(--table-body-bg) !important;
+  color: var(--table-text-color) !important;
+  border-color: var(--table-border-color) !important;
+}
+
+/* Remove Bootstrap striping */
+[data-theme="dark"] .table-striped tbody tr {
+  background-color: var(--table-body-bg) !important;
+}
+
+/* ===================================================== */
+/* HOVER */
+/* ===================================================== */
+[data-theme="dark"] table tbody tr:hover,
+[data-theme="dark"] .table tbody tr:hover {
+  background-color: var(--table-hover-bg) !important;
+}
+
+[data-theme="dark"] table tbody tr:hover > *,
+[data-theme="dark"] .table tbody tr:hover > * {
+  background-color: var(--table-hover-bg) !important;
+}
+
+/* ===================================================== */
+/* DATATABLES */
+/* ===================================================== */
+[data-theme="dark"] table.dataTable {
+  background-color: var(--table-body-bg) !important;
+}
+
+[data-theme="dark"] table.dataTable thead th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+}
+
+/* Remove striping, ordering & shadows */
+[data-theme="dark"] table.dataTable tbody tr > * {
+  background-color: var(--table-body-bg) !important;
+  box-shadow: none !important;
+}
+
+/* Hover */
+[data-theme="dark"] table.dataTable tbody tr:hover > * {
+  background-color: var(--table-hover-bg) !important;
+}
+
+/* Footer border */
+[data-theme="dark"] table.dataTable.no-footer {
+  border-bottom-color: var(--table-border-color) !important;
+}
+
+/* ===================================================== */
+/* DATATABLES CONTROLS */
+/* ===================================================== */
+[data-theme="dark"] .dataTables_wrapper,
+[data-theme="dark"] .dt-container {
+  color: var(--table-text-color) !important;
+}
+
+[data-theme="dark"] .dataTables_wrapper select,
+[data-theme="dark"] .dataTables_wrapper input,
+[data-theme="dark"] .dt-input {
+  background-color: #323D4E !important;
+  color: var(--table-text-color) !important;
+  border: 1px solid var(--table-border-color) !important;
+}
+
+/* Pagination */
+[data-theme="dark"] .paginate_button,
+[data-theme="dark"] .dt-paging-button {
+  background: #323D4E !important;
+  color: var(--table-text-color) !important;
+  border: 1px solid var(--table-border-color) !important;
+}
+
+[data-theme="dark"] .paginate_button:hover,
+[data-theme="dark"] .dt-paging-button:hover {
+  background: var(--table-hover-bg) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .paginate_button.current,
+[data-theme="dark"] .dt-paging-button.current {
+  background: var(--primary-600) !important;
+  border-color: var(--primary-600) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .paginate_button.disabled {
+  background: transparent !important;
+  color: #6b7280 !important;
+}
+
+/* Empty & Processing */
+[data-theme="dark"] .dataTables_empty,
+[data-theme="dark"] .dataTables_processing {
+  background-color: var(--table-body-bg) !important;
+  color: #9ca3af !important;
+}
+
+/* ===================================================== */
+/* UTILITIES */
+/* ===================================================== */
+[data-theme="dark"] .table-bordered,
+[data-theme="dark"] .table-bordered th,
+[data-theme="dark"] .table-bordered td {
+  border-color: var(--table-border-color) !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: var(--table-header-text) !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #323D4E !important;
+}
+
+/* ===================================================== */
+/* SWEETALERT DARK */
+/* ===================================================== */
+[data-theme="dark"] .swal2-popup {
+  background-color: #273142 !important;
+  color: #d1d5db !important;
+}
+
+[data-theme="dark"] .swal2-title {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .swal2-input,
+[data-theme="dark"] .swal2-textarea,
+[data-theme="dark"] .swal2-select {
+  background-color: #323D4E !important;
+  color: #d1d5db !important;
+  border-color: #374151 !important;
+}
+
+[data-theme="dark"] .swal2-input:focus,
+[data-theme="dark"] .swal2-textarea:focus,
+[data-theme="dark"] .swal2-select:focus {
+  border-color: #3B82F6 !important;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.3) !important;
+}
+
+[data-theme="dark"] .swal2-styled.swal2-confirm {
+  background-color: #EF4444 !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .swal2-styled.swal2-cancel {
+  background-color: #E5E7EB !important;
+  color: #374151 !important;
+}
+
+/* ============================================= */
+/* GLOBAL TABLE COLOR SCHEME (DARK MODE) */
+/* ============================================= */
+
+html[data-theme="dark"] {
+  --table-header-bg: #0f172a; /* hitam */
+  --table-body-bg: #1f2937;   /* abu-abu */
+  --table-hover-bg: #273549;  /* hover */
+  --table-text-color: #e5e7eb;
+  --table-header-text: #ffffff;
+  --table-border-color: #334155;
+}
+
+/* ============================================= */
+/* TABLE HEADER */
+/* ============================================= */
+[data-theme="dark"] table thead th,
+[data-theme="dark"] .table thead th {
+  background-color: var(--table-header-bg) !important;
+  color: var(--table-header-text) !important;
+  border-color: var(--table-border-color) !important;
+}
+
+/* ============================================= */
+/* TABLE BODY (ALL ROWS SAME COLOR) */
+/* ============================================= */
+[data-theme="dark"] table tbody tr,
+[data-theme="dark"] .table tbody tr {
+  background-color: var(--table-body-bg) !important;
+}
+
+[data-theme="dark"] table tbody td,
+[data-theme="dark"] .table tbody td,
+[data-theme="dark"] table tbody th,
+[data-theme="dark"] .table tbody th {
+  background-color: var(--table-body-bg) !important;
+  color: var(--table-text-color) !important;
+  border-color: var(--table-border-color) !important;
+}
+
+/* ============================================= */
+/* REMOVE STRIPING (BOOTSTRAP & DATATABLES) */
+/* ============================================= */
+[data-theme="dark"] 
+.table-striped tbody tr,
+[data-theme="dark"] 
+table.dataTable tbody tr:nth-child(odd),
+[data-theme="dark"] 
+table.dataTable tbody tr:nth-child(even) {
+  background-color: var(--table-body-bg) !important;
+}
+
+/* DataTables cell fix */
+[data-theme="dark"] table.dataTable tbody tr > * {
+  background-color: var(--table-body-bg) !important;
+  box-shadow: none !important;
+}
+
+/* ============================================= */
+/* HOVER */
+/* ============================================= */
+[data-theme="dark"] table tbody tr:hover > *,
+[data-theme="dark"] .table tbody tr:hover > * {
+  background-color: var(--table-hover-bg) !important;
+}
+
+
+/* ============================================= */
+/* FORCE ALL ROWS SAME COLOR - HIGHEST PRIORITY */
+/* ============================================= */
+[data-theme="dark"] table.dataTable tbody tr td,
+[data-theme="dark"] table.dataTable tbody tr th,
+[data-theme="dark"] table.dataTable tbody tr:nth-child(odd) td,
+[data-theme="dark"] table.dataTable tbody tr:nth-child(odd) th,
+[data-theme="dark"] table.dataTable tbody tr:nth-child(even) td,
+[data-theme="dark"] table.dataTable tbody tr:nth-child(even) th,
+[data-theme="dark"] table.dataTable tbody tr:nth-of-type(odd) td,
+[data-theme="dark"] table.dataTable tbody tr:nth-of-type(even) td,
+[data-theme="dark"] table.dataTable.stripe tbody tr:nth-child(odd) td,
+[data-theme="dark"] table.dataTable.stripe tbody tr:nth-child(even) td,
+[data-theme="dark"] table.dataTable.display tbody tr:nth-child(odd) td,
+[data-theme="dark"] table.dataTable.display tbody tr:nth-child(even) td,
+[data-theme="dark"] .table-striped > tbody > tr > *,
+[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) > *,
+[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(even) > * {
+  background-color: #1f2937 !important;
+  --bs-table-accent-bg: transparent !important;
+  --bs-table-striped-bg: transparent !important;
+  box-shadow: none !important;
+}
